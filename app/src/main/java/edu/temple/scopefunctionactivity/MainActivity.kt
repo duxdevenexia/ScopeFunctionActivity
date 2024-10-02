@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
 
      */
 
+    // same
     private fun getTestDataArray(): List<Int> = MutableList(15) { Random.nextInt() }.apply {
         sort()
         }
@@ -101,6 +102,7 @@ class MainActivity : AppCompatActivity() {
 
      */
 
+    // will return a boolean value which after compared between average and median
     private fun averageLessThanMedian(listOfNumbers: List<Double>): Boolean {
         return listOfNumbers.let {
             val avg = it.average()
